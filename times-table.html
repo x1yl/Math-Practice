@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Practice</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <button onclick="location.href = 'index.html'">Customize Math Practice</button>
+    <h1>Times Table Practice</h1>
+    <button onclick="generateEquation()">Generate Equation</button>
+    <br><br>
+    <div id="equation"></div>
+    <br><br>
+    <label for="answer">Your Answer (Round to the nearest 100th):</label>
+    <input type="number" id="answer" onkeydown="handleKeyPress(event)">
+    <button onclick="checkAnswer()">Check Answer</button>
+    <div id="result"></div>
+  </div>
+
+  <script src="indexs.js"></script>
+</body>
+</html>
