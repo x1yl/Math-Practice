@@ -40,7 +40,6 @@ function calculateCorrectAnswer(operation, equation) {
 
 function checkAnswer() {
   const userAnswer = parseFloat(document.getElementById('answer').value, 10);
-  console.log(correctAnswer)
   if (userAnswer == parseFloat(correctAnswer.toFixed(2))) {
     document.getElementById('result').innerText = 'Correct!';
   } else {
