@@ -26,7 +26,7 @@
     <div id="equation"></div>
     <br><br>
     <label for="answer">Your Answer (Round to the nearest 100th):</label>
-    <input type="number" id="answer">
+    <input type="number" id="answer" onkeydown="handleKeyPress(event)">
     <button onclick="checkAnswer()">Check Answer</button>
     <div id="result"></div>
   </div>

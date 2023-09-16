@@ -46,3 +46,9 @@ function checkAnswer() {
     document.getElementById('result').innerText = 'Incorrect. Try again!';
   }
 }
+
+function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+      checkAnswer();
+    }
+  }
